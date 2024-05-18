@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+    height: 400px;
+    width: 500px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 5rem 20px;
+}
+.upper{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 10px;
+    
+}
+.input label{
+    font-size: 20px;
+    color: rgb(78, 76, 76);
+    position: relative;
+    right: 20px;
+}
+.input input{
+    height: 40px;
+    width: 70%;
+}
+input::placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 10%;
+}
+input[type="text"]
+{
+    font-size:16px;
+    padding-left: 10%;
+    font-weight: 800;
+}
+.middle{
+    height: 0px;
+}
+#Submit{
+    float: inline-end;
+    position: relative;
+    bottom: 30px;
+    left: 5px;
+    border-radius: 50%;
+    border-color: hsl(260, 23%, 48%);
+    background-color: hsl(259, 100%, 65%);
+    width: 75px;
+    height: 75px;
+    transition: all 1s ease-in-out;
+}
+#Submit:hover{
+    background-color: black;
+}
+.lower{
+    padding-left: 30px;
+    font-size: 50px;
+    position: relative;
+    bottom: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+.age{
+    color: hsl(259, 100%, 65%);
+}
+span{
+    color: black;
+    font-weight: 800;
+}
+.error{
+    color: red;
+    font-size: small;
+}
+.hidden{
+    display: none;
+}
+

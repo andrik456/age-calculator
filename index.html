@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  
+</head>
+<body>
+<div class="container">
+  <div class="upper">
+    <div class="input">
+    <label for="input_day">Day</label>
+    <input type="text" placeholder="DD" id="input_day" oninput="if(this.value.length>2)this.value=this.value.slice(0,2)">
+      <div class="error hidden">must be a valid day</div>
+  </div>
+    <div class="input">
+    <label for="input_month">Month</label> 
+    <input type="text" name="" id="input_month" placeholder="MM" oninput="if(this.value.length>2)this.value=this.value.slice(0,2)"">
+      <div class="error hidden">must be a valid month</div>
+  </div>
+    <div class="input">
+    <label for="input_year">Year</label>
+    <input type="text" name="" id="input_year" placeholder="YYYY" oninput="if(this.value.length>4)this.value=this.value.slice(0,4)">
+      <div class="error hidden">Must be a valid year</div>
+  </div>
+  </div>
+    <div class="miidle">
+    <hr>
+    <button id="Submit" ><img src="assets/images/icon-arrow.svg" alt=""></button>
+    
+</div>
+<div class="lower">
+  <div class="output">
+    <div class="years"><span id="years" class="age">--</span> <span>years</span></div>
+    <div class="months"><span id="months" class="age">--</span> <span>months</span></div>
+    <div class="years"><span id="day" class="age">--</span> <span>years</span></div>
+  
+   
+    
+  </div>
+</div>
+</div>
+  
+ <script src="script.js"></script>
+</body>
+</html>
